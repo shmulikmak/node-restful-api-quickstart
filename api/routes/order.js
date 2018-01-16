@@ -13,7 +13,7 @@ router.post('/', (req, res, next) => {
     });
 });
 
-router.get(':productId', (req, res, next) => {
+router.get(':orderId', (req, res, next) => {
     const id = req.params.productId;
 
     if (id === '123') {
@@ -27,13 +27,13 @@ router.get(':productId', (req, res, next) => {
     }
 });
 
-router.patch(':productId', (req, res, next) => {
+router.patch(':orderId', (req, res, next) => {
     res.status(200).json({
         message: 'its patch'
     });
 });
 
-router.delete(':productId', (req, res, next) => {
+router.delete(':orderId', (req, res, next) => {
     res.status(200).json({
         message: 'its delete'
     });
